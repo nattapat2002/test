@@ -1,0 +1,57 @@
+.product-details {
+    flex-grow: 1;
+    margin: 10px;
+}
+
+.product-buttons{
+    text-align: center;
+}
+
+    .product-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .product-box {
+        border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    width: calc(20% - 30px);
+    text-align: left;
+    transition: transform 0.2s ease-in-out;
+    }
+    
+    .product-box:hover {
+        transform: scale(1.05);
+    }
+
+    .custom-button-width {
+        width: 200px; 
+    }
+
+    .opaque {
+        opacity: 0.5; /* Adjust the opacity level as needed */
+        pointer-events: none; /* Prevent interaction with elements inside the card */
+    }
+
+    .product-box img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    
+    @media (max-width: 1024px) {
+    .product-box {
+        width: calc(50% - 30px); /* Two per row */
+    }
+}
+    @media (max-width: 768px) {
+    .product-box {
+        width: calc(50% - 30px); /* Two per row */
+    }
+}
+@media (max-width: 576px) {
+    .product-box {
+        width: calc(100% - 30px); /* One per row */
+    }
+}
